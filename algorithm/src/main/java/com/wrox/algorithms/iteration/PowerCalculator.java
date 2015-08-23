@@ -24,9 +24,9 @@ public class PowerCalculator {
 		return result;
 	}
 
-//	public static void main(String[] args) {
-//		PowerCalculator calculator = PowerCalculator.INSTANCE;
-//		System.out.println(calculator.calculate(10, -2));
-//	}
+	public static void main(String[] args) {
+		PowerCalculator calculator = PowerCalculator.INSTANCE;
+		System.out.println(calculator.calculate(10, -2));
+	}
 
 }
