@@ -9,11 +9,11 @@ public class PowerCalculator {
 	}
 
 	public int calculate(int base, int exponent) {
-		assert exponent >  0  : "exponent can't be < 0";
+		assert exponent >= 0  : "exponent can't be < 0";
 		
-		if( exponent <  0){
-			System.out.println( "exponent can't be < 0");
-		}
+//		if( exponent <  0){
+//			System.out.println( "exponent can't be < 0");
+//		}
 		
 		int result = 1;
 
@@ -26,7 +26,7 @@ public class PowerCalculator {
 
 	public static void main(String[] args) {
 		PowerCalculator calculator = PowerCalculator.INSTANCE;
-		System.out.println(calculator.calculate(10, -2));
+		System.out.println(calculator.calculate(10, 2));
 	}
 
 }
