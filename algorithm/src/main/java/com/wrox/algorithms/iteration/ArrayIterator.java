@@ -28,7 +28,7 @@ public class ArrayIterator implements Iterator {
 		this._last = start + length - 1;
 		System.out.println("_last=" + _last);
 		System.out.println("array.length=" + array.length);
-
+		System.out.println("array=" + array);
 		assert _last < array.length : "last index can't go beyond array.length ";
 
 	}
@@ -41,6 +41,7 @@ public class ArrayIterator implements Iterator {
 
 		this._first = 0;
 		this._last = array.length - 1;
+		System.out.println("array=" + array);
 
 	}
 
@@ -51,6 +52,7 @@ public class ArrayIterator implements Iterator {
 
 	public void last() {
 		_current = _last;
+		System.out.println("_current=" + _current);
 	}
 
 	public boolean isDone() {
